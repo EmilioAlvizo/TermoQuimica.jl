@@ -1,5 +1,24 @@
 # TermoQuimica.jl
-Programa de equilibrio liquido/vapor.
+Programa para el equilibrio liquido/vapor y calculo de propiedades usando ecuaciones cubicas de estado.
+
+## Caracteristicas
+TermoQuimica puede calcular el equilibrio liquido y vapor de n componentes, haciendo uso de distintos métodos y sin hacer molestas conversiones de unidades.
+
+Métodos utilizados:
+* Ideal
+* Van Laar
+* Margules
+* Wilson
+* Wilson mod.
+* NRTL
+* UNIQUAC
+* UNIFAC
+
+Ecuaciones de estado
+: Van Der Waals
+: Redlich Kwong
+: Soave Redlich Kwong
+: Peng Robinson
 
 ## Ejemplo de uso
 Evolucion diferencial pose una funcion llamada 
