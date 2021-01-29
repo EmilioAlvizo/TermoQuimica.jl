@@ -20,9 +20,6 @@ Ecuaciones de estado:
 * Soave Redlich Kwong
 * Peng Robinson
 
-term
-: definition
-
 ## Ejemplo de uso
 Para el equilibrio **P-X-Y** la mezcla **etanol(1)-agua(2)** a 273.15 K, usando el modelo de actividad de **Van Laar**, las coeficientes de Van Laar son: `A12 = 1.6798` y `A21 = 0.9227`, las constantes de Antoine para el etanol son: `A = 8.12875`, `B = 1660.8713`, `C = 238.131` y para el agua `A = 8.05573`, `B = 1723.6425`, `C = 233.08`
 
