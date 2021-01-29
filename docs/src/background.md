@@ -1,0 +1,38 @@
+# Antecedentes
+
+---
+
+## La naturaleza del equilibrio   
+
+El equilibrio es una condición en la que no se producen cambios en las propiedades macroscópicas de un sistema aislado con el tiempo. En el equilibrio, todos los potenciales que pueden causar cambios están exactamente equilibrados, por lo que no existe una fuerza motriz para ningún cambio en el sistema. Un sistema aislado que consiste en fases líquidas y vaporosas en contacto íntimo alcanza finalmente un estado final en el que no existe ninguna tendencia a que se produzcan cambios en el sistema. La temperatura, la presión y la composición de las fases alcanzan los valores finales que después permanecen fijos. El sistema está en equilibrio. Sin embargo, a nivel microscópico, las condiciones no son estáticas. Las moléculas que componen una fase en un instante dado no son las mismas moléculas que más tarde ocupan la misma fase. Las moléculas pasan constantemente de una fase a la otra. Sin embargo, la velocidad media de paso de las moléculas es la misma en ambas direcciones, y no se produce una transferencia neta de material entre fases. En la práctica de la ingeniería, la suposición de equilibrio se justifica cuando conduce a resultados de precisión satisfactoria. Por ejemplo, en la caldera de una columna de destilación, se suele suponer un equilibrio entre las fases de vapor y de líquido. En el caso de las tasas de vaporización finitas, se trata de una aproximación, pero no introduce un error significativo en los cálculos de ingeniería.
+
+## Equilibrio Liquido/Vapor
+
+Debido tanto a su tamaño como a su importancia, las columnas de destilación son características clave de las plantas químicas de todo el mundo. Las columnas de destilación son normalmente las columnas muy altas, de forma cilíndrica, que se ven en las plantas químicas que realizan la destilación, cuyo funcionamiento unitario separa los componentes de una mezcla en función de su punto de ebullición. Como era de esperar, la información sobre cómo las mezclas se separan en fases de vapor y líquido se convierte en la pieza clave de la información asociada a la destilación. 
+
+## Ejemplo
+
+Cuando se hierve una olla de agua a 1 atm, hay H2O líquido en la olla y vapor de H2O que sale de la olla, todo esto ocurre a 100 °C. En lugar de agua hirviendo sola (una sola sustancia, H2O), supongamos que tenemos una mezcla líquida equimolar de agua y otro compuesto, digamos etanol, en la olla a 1 atm. ¿A qué temperatura herviría la mezcla? ¿Estaría a 100 °C (el punto de ebullición normal del agua)? ¿Sería a 78 °C (el punto de ebullición normal del etanol)? ¿Estaría alrededor de 89 °C, que es un promedio ponderado de los puntos de ebullición normales basados en la composición (nuestro enfoque "intuitivo")? Además, ¿la composición del vapor que sale de la olla sería también equimolar?
+
+El experimento nos dice que una mezcla líquida equimolar de agua y etanol hervirá alrededor de 80 °C a 1 atm, mientras que la composición de la fase de vapor no será equimolar (como la del líquido), sino que será del 65% para el etanol. Estos resultados van en contra de nuestro enfoque intuitivo, pero también proporcionan una enorme posibilidad. Con solo hervir una mezcla líquida en una composición, podemos obtener una composición diferente en la fase de vapor. Así que en el ejemplo anterior, nuestra composición de vapor será enriquecida en etanol, en efecto "separando" parte del etanol del agua. Esta es la base de una de las operaciones unitarias más importantes y visibles en la ingeniería química: la columna de destilación. Obviamente, hay una gran necesidad de entender por qué nuestro enfoque intuitivo no funciona, así como de desarrollar una forma de predecir y/o modelar cuáles serán estos resultados para cualquier mezcla de vapor y líquido de interés en la industria de procesos químicos.
+
+Para comprender los resultados experimentales descritos en el párrafo anterior, tenemos que volver a los fenómenos de evaporación y ebullición para considerar la naturaleza del proceso a nivel molecular. Consideremos un líquido puro y comprimido en un contenedor de volumen fijo. El recipiente está dentro de un baño de calor que controla la temperatura y la mantiene constante. El líquido llena todo el espacio del contenedor. Si se deja solo, ¿se evaporará el líquido?. No, porque es un sistema cerrado y no hay espacio para que el vapor se llene. Sin embargo, digamos que ese recipiente está conectado a un segundo recipiente por un divisor y el contenido del segundo recipiente es evacuado (Figura 10-1), por lo que la presión del segundo recipiente es de 0 atm. Cuando el divisor es removido, ¿qué pasa? El líquido comenzará a expandirse en el espacio evacuado y una porción del líquido comenzará a vaporizarse porque cualquier burbuja de vapor que intente formarse desde la superficie del líquido no se detendrá (no hay presión, por lo tanto no hay fuerza para detenerlas) sobre el líquido en ese punto. Tanto la expansión como la vaporización del líquido continuarán hasta el punto en que parte del vapor comience a condensarse. Se establecerá un equilibrio dinámico donde la tasa de vaporización será igual a la tasa de condensación. La presión ejercida por este vapor sobre la superficie de este líquido se equilibra ahora con la presión ejercida en la fase líquida. Esta presión se denomina presión de vapor, que es la única presión a la que el líquido y el vapor pueden existir en equilibrio, y será una función de la temperatura del sistema.
+
+![sdsdsd](assets/doc1.png)
+
+¿Y si hiciéramos un experimento diferente? La configuración es inicialmente la misma, pero ahora tienes una mezcla de dos líquidos en lugar de un compuesto puro en el primer recipiente. El primer recipiente está de nuevo conectado a un segundo recipiente (cuyo contenido es evacuado) por un divisor. Quitamos el divisor y ¿qué pasa? ¿Es lo mismo que antes? Sí y no. Sí, hay expansión y vaporización y, en última instancia, se establece un equilibrio dinámico como antes. Pero, ¿cuál es la presión final en el sistema? Dado que ahora hay dos líquidos, ¿la presión final es sólo la suma de las presiones de vapor de ambos líquidos? No, no lo es. La presión de vapor de una sustancia pura es la presión sobre la superficie del líquido puro. Sin embargo, cuando se tiene una mezcla, hay más de un líquido presente en la superficie. Por lo tanto, para una superficie fija (como en este problema), habrá menos de cada componente en la interfaz líquido-vapor que si estuvieran allí por sí mismos. Por lo tanto, la presión parcial que cada componente ejercerá será diferente que si fuera un componente puro. ¿Cuánto menos? Bueno, hemos visto antes que cuando queremos calcular una propiedad de la mezcla, necesitamos usar las fracciones molares para dar cuenta del porcentaje de cada material en una mezcla
+
+Así que la pregunta es, "¿Es la presión sobre la mezcla de líquido simplemente una suma de las presiones de vapor de los componentes puros (ponderadas por sus fracciones molares), como esto?"
+
+Esto refleja nuestro enfoque "intuitivo" del capítulo anterior. La respuesta que dimos allí es la misma que ahora. Si el sistema se comporta como una solución ideal, esto sería el caso. Si no, entonces (como descubrimos de otras propiedades termofísicas en el capítulo 9) tendremos que dar cuenta de esos casos no ideales también.
+
+ [[2]](@ref refs).
+
+## [References](@id refs)
+
+[1] W. Tucker, *Validated Numerics: A Short Introduction to Rigorous
+Computations*, Princeton University Press (2011).
+
+[2] A. Haro, *Automatic differentiation methods in computational dynamical
+systems: Invariant manifolds and normal forms of vector fields at fixed points*,
+[preprint](http://www.maia.ub.es/~alex/admcds/admcds.pdf).
