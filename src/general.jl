@@ -20,9 +20,9 @@ Regresa la presión `P` en mmHg
 
 - `P :: m-element Array{Float64,1}` presión
 """
-function P_Antoine(CA::Array, T::Quantity, i::Int)::Quantity
+function P_Antoine(CA::Array, T::Unitful.Temperature, i::Int)::Unitful.Pressure
     A,B,C = CA[i, :]
-    T = Unitful.uconvert(u"K",T)
+    T = T |> u"K"
     P = u"Torr"*10^(A-B/((T/1u"K" -273.15)+C))
     return P
 end
@@ -46,9 +46,9 @@ Regresa la temperatura `T` en °C
 
 - `T :: m-element Array{Float64,1}` temperatura
 """
-function T_Antoine(CA::Array, P::Quantity, i::Int)::Quantity
+function T_Antoine(CA::Array, P::Unitful.Pressure, i::Int)::Unitful.Temperature
     A,B,C = CA[i, :]
-    P = uconvert(u"Torr",P)
+    P = P |> u"Torr"
     (-B/(log10(P/1u"Torr")-A) -C +273.15)*u"K"
 end
 

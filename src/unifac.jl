@@ -199,7 +199,7 @@ las fracciones del vapor `y` y la presión `P` en Torr (`m` es la longitud de `x
 - `P :: m-element Array{Float64,1}` presión
 """
 function pxy(n::Int,T,CA::Array,com,fre,xx;uni=u"Torr")
-    T = uconvert(u"K",T)
+    T = T|> u"K"
     xx = general.nc(xx...)
     m = size(xx,2)
     n2 = length(com)
@@ -218,19 +218,16 @@ function pxy(n::Int,T,CA::Array,com,fre,xx;uni=u"Torr")
     end
 
     y = Array{Float64}(undef,n,m)
-    P = Vector{Float64}(undef,m)*u"Torr"
+    P = Vector{Float64}(undef,m)*uni
     for i=1:m
         x = xx[:,i]
         for j=1:n
             y[j,i] = y_calc(v,Q,R,x,a,CA,T,j,n,n2)
         end
-        P[i] = Pₜₒₜ(v,Q,R,x,a,CA,T,n,n2)
+        P[i] = Pₜₒₜ(v,Q,R,x,a,CA,T,n,n2) |> uni
     end
-    if uni==u"Torr"
-        return xx,y,P
-    else
-        return xx,y,uconvert.(uni,P)
-    end
+    
+    return xx,y,P
 end
 
 """
@@ -254,7 +251,7 @@ las fracciones del vapor `y` y la temperatura `T` en grados kelvin (`m` es la lo
 - `T :: m-element Array{Float64,1}` temperatura
 """
 function txy(n::Int,Pobj,CA::Array,com,fre,xx;uni=u"K")
-    Pobj = uconvert(u"Torr",Pobj)
+    Pobj = Pobj |> u"Torr"
     xx = general.nc(xx...)
     m = size(xx,2)
     n2 = length(com)
@@ -293,12 +290,7 @@ function txy(n::Int,Pobj,CA::Array,com,fre,xx;uni=u"K")
         end
     end
 
-
-    if uni==u"K"
-        return xx,y,T
-    else
-        return xx,y,uconvert.(uni,T)
-    end
+    return xx,y,T .|> uni
 end
 
 end  # module
