@@ -3,7 +3,7 @@ module TermoQuimica
 using Unitful
 using NLsolve
 
-export EOS, general, vanlaar, ideal, margules, wilson, wilsonmod, nrtl, uniquac, unifac, unifacmod, entrada_recta
+export EOS, general, vanlaar, ideal, margules, wilson, wilsonmod, nrtl, uniquac, unifac, unifacmod
 include("EOS.jl")
 include("general.jl")
 include("ideal.jl")
@@ -16,7 +16,6 @@ include("uniquac.jl")
 include("unifac.jl")
 include("unifacmod.jl")
 
-include("accesorios.jl")
 
 #=
 tolueno 7.13657  1457.2871  231.827
