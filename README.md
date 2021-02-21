@@ -1,6 +1,8 @@
 # TermoQuimica.jl 🧪
 Programa para el equilibrio liquido/vapor y calculo de propiedades usando ecuaciones cubicas de estado.
 
+kjljhl
+
 ## Caracteristicas
 TermoQuimica puede calcular el equilibrio liquido y vapor de n componentes, haciendo uso de distintos métodos y sin hacer molestas conversiones de unidades.
 
