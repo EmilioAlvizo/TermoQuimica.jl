@@ -3,17 +3,15 @@ using Documenter, TermoQuimica
 DocMeta.setdocmeta!(TermoQuimica, :DocTestSetup, :(using TermoQuimica); recursive=true)
 
 
-makedocs(
-    repo="https://github.com/EmilioAlvizo/TermoQuimica.jl/blob/{commit}{path}#{line}",
-    sitename="TermoQuimica.jl",
+makedocs(;
     modules = [TermoQuimica],
     authors  = "Emilio Alvizo Velázquez",
-
-    format = Documenter.HTML(
+    repo="https://github.com/EmilioAlvizo/TermoQuimica.jl/blob/{commit}{path}#{line}",
+    sitename="TermoQuimica.jl",
+    format = Documenter.HTML(;
         prettyurls = get(ENV, "CI", "false") == "true",
         canonical="https://EmilioAlvizo.github.io/TermoQuimica.jl",
         assets = String[]),
-
     pages = [
         "Inicio" => "index.md",
         "Background" => "background.md",

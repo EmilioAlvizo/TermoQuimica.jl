@@ -1,7 +1,12 @@
 # TermoQuimica.jl 🧪
+
+| **Documentation**                                                               | **Build Status**                                                                                |
+|:-------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------:|
+|[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://EmilioAlvizo.github.io/TermoQuimica.jl/stable) [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://EmilioAlvizo.github.io/TermoQuimica.jl/dev)| [![Build Status](https://github.com/EmilioAlvizo/TermoQuimica.jl/workflows/CI/badge.svg)](https://github.com/EmilioAlvizo/TermoQuimica.jl/actions) [![Coverage](https://codecov.io/gh/EmilioAlvizo/TermoQuimica.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/EmilioAlvizo/TermoQuimica.jl)|
+
+
 Programa para el equilibrio liquido/vapor y calculo de propiedades usando ecuaciones cubicas de estado.
 
-kjljhl
 
 ## Caracteristicas
 TermoQuimica puede calcular el equilibrio liquido y vapor de n componentes, haciendo uso de distintos métodos y sin hacer molestas conversiones de unidades.
