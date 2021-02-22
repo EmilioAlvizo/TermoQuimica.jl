@@ -55,9 +55,9 @@ jobs:
       - run: |
           julia --project=docs -e '
             using Documenter: DocMeta, doctest
-            using FlujoFluidos
-            DocMeta.setdocmeta!(FlujoFluidos, :DocTestSetup, :(using FlujoFluidos); recursive=true)
-            doctest(FlujoFluidos)'
+            using TermoQuimica
+            DocMeta.setdocmeta!(TermoQuimica, :DocTestSetup, :(using TermoQuimica); recursive=true)
+            doctest(TermoQuimica)'
       - run: julia --project=docs docs/make.jl
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
