@@ -2,10 +2,6 @@
 
 ---
 
-```@meta
-CurrentModule = TaylorSeries
-```
-
 **TermoQuímica** es una pagina de apoyo para ayudar a realizar distintos tipos de cálculos útiles en la ingeniería química; En esta sección de la documentación, usted aprenderá como usar TermoQuímica, y descubrirá todo lo que puede hacer con ella durante un corto, pero divertido tutorial.
 
 Ahora, trataremos de resolver el siguiente problema.
