@@ -34,6 +34,8 @@ EOS.Van_Der_Waals
 EOS.Redlich_Kwong
 EOS.Soave_Redlich_Kwong
 EOS.Peng_Robinson
+saft.pxy
+saft.Mix
 ```
 ```@docs
 accesorios.entrada_recta
