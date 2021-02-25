@@ -1,7 +1,10 @@
 module margules
+
 include("general.jl")
+
 using Unitful
 using NLsolve
+
 ∑(x)=sum(x)
 γ(T,x,Λ)=(exp((Λ[1,2]+2*(Λ[2,1]-Λ[1,2])*x[1])*(x[2]^2)),exp((Λ[2,1]+2*(Λ[1,2]-Λ[2,1])*x[2])*(x[1]^2)))
 P(T,x,CA,Λ,i) = x[i]*γ(T,x,Λ)[i]*general.P_Antoine(CA,T,i)
