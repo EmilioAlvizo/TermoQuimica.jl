@@ -1,4 +1,3 @@
-
 module nrtl
 
 include("general.jl")

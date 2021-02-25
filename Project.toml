@@ -1,7 +1,7 @@
 name = "TermoQuimica"
 uuid = "7a098a08-e70e-483f-ae9c-35bef3462704"
 authors = ["Emilio Alvizo Velázquez"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 NLsolve = "2774e3e8-f4cf-5e23-947b-6d7e65073b56"
