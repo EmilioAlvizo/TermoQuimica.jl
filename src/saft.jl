@@ -27,20 +27,20 @@ mutable struct Mix
 end
 
 function Mix(MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),k::Array{Float64,2})
-    n = length(x)
+    n = length(MW)
     y = x
     componentes = ["Componente $i" for i=1:n]
     Mix(n,componentes,MW,x,y,k)
 end
 
 function Mix(componentes::Vector{String},MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),k::Array{Float64,2})
-    n = length(x)
+    n = length(MW)
     y = x
     Mix(n,componentes,MW,x,y,k)
 end
 
 function Mix(MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),y::typeof([1.0]),k::Array{Float64,2})
-    n = length(x)
+    n = length(MW)
     componentes = ["Componente $i" for i=1:n]
     Mix(n,componentes,MW,x,y,k)
 end
@@ -57,7 +57,7 @@ function Mix(n::Int,componentes::Vector{String},MW::typeof([1.0]u"g/mol"),x::typ
 end
 
 function Mix(componentes::Vector{String},MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),y::typeof([1.0]),k::Array{Float64,2})
-    n = length(x) 
+    n = length(MW) 
     Mix(n,componentes,MW,x,y,k)
 end
 
@@ -88,20 +88,20 @@ function Mix(n::Int,componentes::Vector{String},MW::typeof([1.0]u"g/mol"),x::typ
 end
 
 function Mix(MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),m::typeof([1.0]),σ::typeof([1.0]u"Å"),ϵ::typeof([1.0]u"K"),k::Array{Float64,2})
-    n = length(x)
+    n = length(MW)
     y = x
     componentes = ["Componente $i" for i=1:n]
     Mix(n,componentes,MW,x,y,m,σ,ϵ,k)
 end
 
 function Mix(componentes::Vector{String},MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),m::typeof([1.0]),σ::typeof([1.0]u"Å"),ϵ::typeof([1.0]u"K"),k::Array{Float64,2})
-    n = length(x)
+    n = length(MW)
     y = x
     Mix(n,componentes,MW,x,y,m,σ,ϵ,k)
 end
 
 function Mix(MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),y::typeof([1.0]),m::typeof([1.0]),σ::typeof([1.0]u"Å"),ϵ::typeof([1.0]u"K"),k::Array{Float64,2})
-    n = length(x)
+    n = length(MW)
     componentes = ["Componente $i" for i=1:n]
     Mix(n,componentes,MW,x,y,m,σ,ϵ,k)
 end
@@ -118,7 +118,7 @@ function Mix(n::Int,componentes::Vector{String},MW::typeof([1.0]u"g/mol"),x::typ
 end
 
 function Mix(componentes::Vector{String},MW::typeof([1.0]u"g/mol"),x::typeof([1.0]),y::typeof([1.0]),m::typeof([1.0]),σ::typeof([1.0]u"Å"),ϵ::typeof([1.0]u"K"),k::Array{Float64,2})
-    n = length(x) 
+    n = length(MW) 
     Mix(n,componentes,MW,x,y,m,σ,ϵ,k)
 end
 
