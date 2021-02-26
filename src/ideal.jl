@@ -1,7 +1,10 @@
 module ideal
+
 include("general.jl")
+
 using Unitful
 using NLsolve
+
 ∑(x)=sum(x)
 P(T,x,CA,i) = x[i]*general.P_Antoine(CA,T,i)
 Pₜₒₜ(T,x,CA,n) = ∑(P(T,x,CA,i) for i=1:n)
