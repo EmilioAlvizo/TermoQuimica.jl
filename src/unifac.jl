@@ -1,6 +1,7 @@
 module unifac
 
 include("general.jl")
+
 import Base: *
 mutable struct bonito
     frecuencia::Int
