@@ -535,11 +535,11 @@ function pxy(T,P,mix::mix,xx;uni=u"Torr")
 
     mix.x = xx[:,1]
     mix.y = mix.x 
-    p[1],y[:,1] = obj_buble(T,P,mix1)
+    p[1],y[:,1] = obj_buble(T,P,mix)
     for i=2:m
         mix.x = xx[:,i]
         mix.y = y[:,i-1] 
-        p[i],y[:,i] = obj_buble(T,p[i-1],mix1)
+        p[i],y[:,i] = obj_buble(T,p[i-1],mix)
     end
 
     p = p .|> uparse(uni)
