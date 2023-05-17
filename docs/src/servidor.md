@@ -11,6 +11,16 @@ Si es usted el que hostea la pagina y debe levantar el servidor Genie, debe real
 
         screen -S genie
 
-3.  Ejecute el archvo server.bat kaka:
+3.  Luego establezca la GENIE_ENV variable de entorno en prod:
 
-        sh server.bat 
+        export GENIE_ENV=prod 
+        
+4.  Ejecute el archvo server:
+
+        ./server
+        
+5.  Salga de screen con:
+
+        CTRL+d 
+
+screen -X -S genie quit, esto mata el proceso, CTRL+a CTRL+d, CTRL+a d
