@@ -11,6 +11,6 @@ Si es usted el que hostea la pagina y debe levantar el servidor Genie, debe real
 
         screen -S genie
 
-3.  Ejecute el archvo server.bat:
+3.  Ejecute el archvo server.bat kaka:
 
         sh server.bat 
